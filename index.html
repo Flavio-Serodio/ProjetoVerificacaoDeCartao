@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/reset.css">
+
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+
+<body style="background-color: grey;">
+  <section class="card-verification">
+    <div class="visual-info-card">
+      <figure class=" card-front">
+        <img class="front" src="./images/bg-card-front.png" alt="parte frontal do cartão">
+      </figure>
+      <figure class="card-back">
+        <img class="back" src="./images/bg-card-back.png" alt="parte traseira do cartão">
+      </figure>
+    </div>
+    <div class="formCard">
+      <form class="formulario-card-info">
+        <label for="cardHolder-name">Cardholder name</label>
+        <input type="text" id="cardHolder-name">
+
+        <label for="cardNumber">card number</label>
+        <input type="text" inputmode="numeric" id="cardNumber">
+        <div class="data">
+          <label for="exp-dateMM" class="dataMM">Exp.  Date  (MM/YY)</label>
+          <label for="cvc">CVC</label>
+          <div class="ExpdataMMYY">
+            <div class="MMYY">
+            <input type="text" inputmode="numeric" id="exp-dateMM" class="MM">
+            <input type="number" inputmode="numeric" id="exp-dateYY" class="MM">
+            </div>
+              <div class="cvc">
+          
+          <input type="number" inputmode="numeric" id="cvc">
+          </div>
+          </div>
+  
+      </div>
+      <button type="submit">Confirm</button>
+    </form>
+    </div>
+  </section>
+
+
+
+
+</body>
+
+</html>
