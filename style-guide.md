@@ -22,7 +22,7 @@ The designs were created to the following widths:
 - Gray 200: hsl(270, 3%, 87%)
 - Gray 400: hsl(212, 12%, 71%)
 - Purple 950: hsl(278, 68%, 11%)
-
+#EEF5FB
 ## Typography
 
 ### Body Copy

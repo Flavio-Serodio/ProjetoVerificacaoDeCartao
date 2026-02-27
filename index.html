@@ -7,8 +7,12 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/card.css">
+  <link rel="stylesheet" href="style/form.css">
   <link rel="stylesheet" href="style/reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 
   <title>Frontend Mentor | Interactive card details form</title>
 
@@ -30,41 +34,52 @@
   <section class="card-verification">
     <div class="visual-info-card">
       <figure class=" card-front">
+        <img src="/images/card-logo.svg" alt="logo do cartão" class="cardLogo">
+        <span class="dataFront">00/00</span>
+        <span class="nameFront">cardholder name</span>
+        <span class="numberCard">0000 0000 0000 0000</span>
+
         <img class="front" src="./images/bg-card-front.png" alt="parte frontal do cartão">
       </figure>
       <figure class="card-back">
+        <span class="CVC-image">000</span>
         <img class="back" src="./images/bg-card-back.png" alt="parte traseira do cartão">
       </figure>
     </div>
-    <div class="formCard">
-      <form class="formulario-card-info">
-        <label for="cardHolder-name">Cardholder name</label>
-        <input type="text" id="cardHolder-name">
 
-        <label for="cardNumber">card number</label>
-        <input type="text" inputmode="numeric" id="cardNumber">
-        <div class="data">
-          <label for="exp-dateMM" class="dataMM">Exp.  Date  (MM/YY)</label>
-          <label for="cvc">CVC</label>
-          <div class="ExpdataMMYY">
-            <div class="MMYY">
-            <input type="text" inputmode="numeric" id="exp-dateMM" class="MM">
-            <input type="number" inputmode="numeric" id="exp-dateYY" class="MM">
-            </div>
-              <div class="cvc">
-          
-          <input type="number" inputmode="numeric" id="cvc">
-          </div>
-          </div>
-  
+    <form action="" class="cardForm">
+      <div class="container holderName">
+        <label for="CardholderName">Cardholder Name</label>
+        <input type="text" id="CardholderName" placeholder=" e.g.Jane appleseed">
       </div>
-      <button type="submit">Confirm</button>
+      <div class="container cardNumber">
+        <label for="CardholderName">Card Number</label>
+        <input type="text" id="CardholderName" placeholder=" e.g. 1234 5678 9123 0000">
+      </div>
+      <div class="container cardData">
+        <div class="group-data">
+          <label for="EXP">EXP. date (MM/YY)</label>
+          <div class="input-groupData">
+            <input type="text" id="EXP" inputmode="numeric" class="mm" maxlength="2" placeholder=" MM">
+            <input type="text" id="EXP" inputmode="numeric" class="yy" maxlength="2" placeholder=" YY">
+          </div>
+        </div>
+
+        <div class="card-cvc">
+          <label for="CVC">CVC</label>
+          <input type="text" id="CVC" inputmode="numeric" maxlength="3" class="cvcgreat" placeholder="CVC" >
+        </div>
+      </div>
+
+      <input type="submit" value="Confirm" class="btn-confirm">
+
     </form>
-    </div>
+
+
   </section>
 
 
-
+  <script type="module" src="js/index.js"></script>
 
 </body>
 

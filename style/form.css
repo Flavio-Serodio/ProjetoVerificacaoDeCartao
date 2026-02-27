@@ -1,0 +1,74 @@
+.cardForm{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-width: 345px;
+    gap:25px
+}
+.container{
+    gap: 7px;
+}
+input{
+    max-width: 345px;
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+    border:0.5px solid hsl(270, 3%, 87%) ;
+    border-radius: 10px;
+    &::placeholder{
+        color: hsl(270, 3%, 87%);
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing: 1.5px;
+    }
+}
+label{
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+.holderName{
+    display: flex;
+    flex-direction: column;
+}
+.cardNumber{
+    display: flex;
+    flex-direction: column;
+}
+.cardData{
+    display: flex;
+    gap: 15px;
+}
+.group-data{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+.input-groupData{
+    display: flex;
+    gap: 10px;
+    width: 155px;
+  
+}
+.card-cvc{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+ 
+}
+.cvcgreat{
+   flex: 2;
+}
+.btn-confirm{
+    background-color: hsl(278, 68%, 11%);
+    color: hsl(0, 0%, 100%);
+    font-size: 14px;
+    font-weight: bold;
+    margin-top:10px ;
+    height: 45px;
+    letter-spacing: 1.5px;
+    border: none;
+    cursor: pointer;
+}

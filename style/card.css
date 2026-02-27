@@ -1,0 +1,90 @@
+body {
+    height: 100vh;
+    display: flex;
+    
+}
+.card-verification{
+    background: url(../images/bg-main-desktop.png) no-repeat white;
+    background-size: 435px;
+    display: flex;
+    align-items: center;
+    gap: 115px;
+    padding: 5rem;
+    max-width: 1300px;
+    width: 100%;
+    min-height: 810px;
+    margin:  auto ;
+    .visual-info-card{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        min-width: 490px;
+        margin-left: 65px;
+        .card-front{
+            display: flex;
+            justify-content: flex-start;
+            max-width: 100%;;
+            .front{
+                max-width: 405px;
+            }
+        }
+        .card-back{
+            display:flex;
+            justify-content: end;
+            max-width: 100%;
+            .back{
+                max-width: 405px;
+            }
+        }
+        }  
+        
+
+    figure{
+        position: relative;
+    }
+    .cardLogo{
+        position:absolute;
+        max-width: 100%;
+        width: 75px;
+        top: 25px;
+        left:34px
+    }
+.numberCard{
+    position: absolute;
+    top: 125px;
+    left: 32px;
+    max-width: 100%;
+    font-size: 25px;
+    letter-spacing: 3.3px;
+    font-weight: bold;
+    color:hsl(270, 3%, 87%); 
+}
+.dataFront{
+    position: absolute;
+    left: 332px;
+    top: 180px;
+    font-size: 14px;
+    font-weight: bold;
+    color:hsl(270, 3%, 87%);
+}
+.nameFront{
+    position: absolute;
+    left: 32px;
+    top:180px;
+    font-size: 15px;
+    font-weight: bold;
+    color:hsl(270, 3%, 87%);
+}
+
+.CVC-image{
+    position: absolute;
+    width: 50px;
+    height: 30px;
+    top: 101px;
+    right: 28px;
+    border: transparent;
+    background: transparent;
+    color: hsl(270, 3%, 87%);
+    font-size:  13px;
+    font-weight: 900;
+}}
