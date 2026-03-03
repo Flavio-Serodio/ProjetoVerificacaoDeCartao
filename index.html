@@ -35,9 +35,11 @@
     <div class="visual-info-card">
       <figure class=" card-front">
         <img src="/images/card-logo.svg" alt="logo do cartão" class="cardLogo">
-        <span class="dataFront">00/00</span>
-        <span class="nameFront">cardholder name</span>
-        <span class="numberCard">0000 0000 0000 0000</span>
+        <span class="dataFrontYY">00</span>
+        <span class="dataFrontB">/</span>
+        <span class="dataFrontMM">00</span>
+        <span class="nameFront">Jane Appleseed</span>
+        <span class="cardNumber">0000 0000 0000 0000</span>
 
         <img class="front" src="./images/bg-card-front.png" alt="parte frontal do cartão">
       </figure>
@@ -50,18 +52,18 @@
     <form action="" class="cardForm">
       <div class="container holderName">
         <label for="CardholderName">Cardholder Name</label>
-        <input type="text" id="CardholderName" placeholder=" e.g.Jane appleseed">
+        <input type="text" id="CardholderName" placeholder=" e.g.Jane appleseed" inputmode="text" maxlength="30">
       </div>
-      <div class="container cardNumber">
-        <label for="CardholderName">Card Number</label>
-        <input type="text" id="CardholderName" placeholder=" e.g. 1234 5678 9123 0000">
+      <div class="container inputCardNumber">
+        <label for="CardNumber">Card Number</label>
+        <input type="text" id="inputCardNumber" placeholder=" e.g. 1234 5678 9123 0000" maxlength="19" inputmode="numeric">
       </div>
       <div class="container cardData">
         <div class="group-data">
-          <label for="EXP">EXP. date (MM/YY)</label>
+          <label for="MM">EXP. date (MM/YY)</label>
           <div class="input-groupData">
-            <input type="text" id="EXP" inputmode="numeric" class="mm" maxlength="2" placeholder=" MM">
-            <input type="text" id="EXP" inputmode="numeric" class="yy" maxlength="2" placeholder=" YY">
+            <input type="text" id="MM" inputmode="numeric" class="mm" maxlength="2" placeholder=" MM">
+            <input type="text" id="YY" inputmode="numeric" class="yy" maxlength="2" placeholder=" YY">
           </div>
         </div>
 

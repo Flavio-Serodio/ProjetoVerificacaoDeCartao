@@ -32,7 +32,7 @@ label{
     display: flex;
     flex-direction: column;
 }
-.cardNumber{
+.inputCardNumber{
     display: flex;
     flex-direction: column;
 }

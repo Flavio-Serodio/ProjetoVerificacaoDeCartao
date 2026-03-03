@@ -49,7 +49,15 @@ body {
         top: 25px;
         left:34px
     }
-.numberCard{
+    .dataFrontB{
+    position: absolute;
+    left: 350px;
+    top: 180px;
+    font-size: 14px;
+    font-weight: bold;
+    color:hsl(270, 3%, 87%);
+    }
+.cardNumber{
     position: absolute;
     top: 125px;
     left: 32px;
@@ -59,7 +67,15 @@ body {
     font-weight: bold;
     color:hsl(270, 3%, 87%); 
 }
-.dataFront{
+.dataFrontYY{
+    position: absolute;
+    left: 357px;
+    top: 180px;
+    font-size: 14px;
+    font-weight: bold;
+    color:hsl(270, 3%, 87%);
+}
+.dataFrontMM{
     position: absolute;
     left: 332px;
     top: 180px;
@@ -71,8 +87,10 @@ body {
     position: absolute;
     left: 32px;
     top:180px;
-    font-size: 15px;
-    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+    font-size: 13px;
     color:hsl(270, 3%, 87%);
 }
 
